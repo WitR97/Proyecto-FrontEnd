@@ -16,6 +16,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 0 40px;
+    position: fixed;
 }
 
 .logo {
@@ -183,4 +184,50 @@ footer {
     font-size: 0.85rem;
     color: #888;
     background-color: #0a0a0a;
+}
+
+#contacto {
+  padding: 40px 20px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+#contacto h2 {
+  font-family: "Roboto Mono", monospace;
+  margin-bottom: 20px;
+}
+
+.contact-box h3 {
+  font-family: "Roboto Mono", monospace;
+  margin-bottom: 15px;
+}
+
+.contact-box form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contact-box input, 
+.contact-box textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-family: "Roboto Mono", monospace;
+}
+
+.contact-box button {
+  background-color: #000000;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 20px;
+  font-family: "Roboto Mono", monospace;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.contact-box button:hover {
+  background-color: #000000;
 }

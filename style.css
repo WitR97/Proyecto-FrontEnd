@@ -1,7 +1,11 @@
 * {
     margin: 0px; 
     padding: 0px; 
-    box-sizing: border-box; /* Corregido de 0 a border-box */
+    box-sizing: border-box; 
+}
+
+body {font-family: "Roboto Mono", monospace;
+    font-size: 16px;
 }
 
 header {
@@ -16,29 +20,27 @@ header {
 
 .logo {
     width: auto;
-    height: 60px; /* Ajustado para que no sea tan grande en el header */
+    height: 60px;
     display: block;
 }
 
-/* Contenedor que junta menú y buscador a la derecha */
+
 .header-right {
     display: flex;
     align-items: center;
     flex-direction: row;
-    gap: 30px; /* Espacio entre el menú y el buscador */
+    gap: 30px;
 }
 
 .navbar {
     display: flex;
-    justify-content: space-around; /* Se agregó el punto y coma que faltaba */
+    justify-content: space-around;
     align-items: center;
     list-style: none;
     gap: 20px;
 }
 
 .navbar a {
-    font-family: "Roboto Mono", monospace;
-    font-size: 16px;
     color: black;
     text-decoration: none;
 }
@@ -74,4 +76,111 @@ header {
     background: transparent;
     cursor: pointer;
     font-size: 0.9rem;
+}
+
+/*footer {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr);
+}*/
+
+.product-card {
+    width: 350px;
+    height: 550px;
+    border: 1px solid black;
+    border-radius: 8px;
+    color: black;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.product-grid{ 
+    height: 700px;
+    display: flex;
+    align-items: bottom;
+    justify-content: center;
+    gap: 10px;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0;
+}
+
+footer {
+    background-color: #121212; /* Fondo negro elegante */
+    color: #ffffff;
+    font-family: "Roboto Mono", monospace;
+    padding-top: 50px;
+    margin-top: 50px;
+}
+
+/* Contenedor principal de columnas con Flexbox */
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;       /* Para que bajen en pantallas chicas */
+    justify-content: space-around; /* Reparte el espacio entre columnas */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px 40px 20px;
+    gap: 30px;
+}
+
+/* Cada columna individual */
+.footer-col {
+    flex: 1;
+    min-width: 200px;      /* Ancho mínimo para que no se aprieten de más */
+}
+
+.footer-col h3 {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.footer-col p {
+    font-size: 0.9rem;
+    color: #b0b0b0;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+/* Listas de enlaces dentro del footer */
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-col ul li {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    color: #b0b0b0;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.2s;
+}
+
+.footer-col ul li a:hover {
+    color: #ffffff;
+}
+
+.footer-bottom {
+    border-top: 1px solid #222;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.85rem;
+    color: #888;
+    background-color: #0a0a0a;
 }
